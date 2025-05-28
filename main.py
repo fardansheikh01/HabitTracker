@@ -5,6 +5,10 @@ from models import SessionLocal, User, Habit, CheckIn, ReportLog
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 from apscheduler.schedulers.background import BackgroundScheduler
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # FastAPI app instance
 app = FastAPI()
